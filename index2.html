@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Crop  prediction
+</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+body{
+    background-color:#d8e4ea;               
+}
+.label{
+    font-size: 20px;
+}
+.field{
+    font-size: 20px;
+    width:50%
+}
+        .subfield{ 
+            font-size:15px;
+            color:#FF0060;
+        }
+div{
+    padding:10px;
+    margin-top:10px;
+    margin-left:32%;
+}
+h1{
+    color:#1F6E8C;
+    text-align:center;
+    margin-top:50px;
+    font-size:40px;
+}
+#button{
+    background-color:#d44e10;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:20px;
+    border-radius:5px;
+    color:white;
+    margin-left:20%;
+}
+    </style>
+    <body>
+        <form action="{{url_for("get_value")}}" method="POST">
+         
+    <h1>Crops Pridiction</h1>
+    <br>
+<div>
+    <label for="h" class='label'><b>N : </b></label>
+    <br>
+    <input type="text" class="field"  name="h" id="POTAS" required>
+    <br>
+    <label class='subfield'>value  of Nitrogen:-min:0 & max:140 </label>
+<br>
+    <br>
+    
+    <label for="p" class='label'><b>P</b></label>
+    <br>
+    <input type="text" class="field" name="p" id="posh" required>
+    <br>
+    <label class='subfield'> value of phosphorus :-min:5 & max:145  </label>
+    
+<br>
+    <br>
+    
+    <label for="K" class='label'><b>K  : </b></label>
+    <br>
+    <input type="text" class="field"  name="K" id="Pot" required>
+    <br>
+    <label class='subfield'>value of Potassium:-min:5 & max:205 </label>
+    
+    
+<br>
+    <br>
+    
+    <label for="temp" class='label'><b>Tempture</b></label>
+    <br>
+    <input type="text" class="field"  name="temp" id="Temp" required>
+    <br>
+    <label class='subfield'>Temerature:-min:8 & max:43 </label>
+    
+<br>
+    
+<br>
+    <br>
+    
+    <label for="hue" class='label'><b>humidity</b></label>
+    <br>
+    <input type="text" class="field" name="hue" id="Hue" required>
+    <br>
+    <label class='subfield'>humidity:-min:14 & max:99  </label>
+    
+<br>
+    
+<br>
+    <br>
+    
+    <label for="ph" class='label'><b>PH</b></label>
+    <br>
+    <input type="text" class="field" name="ph" id="ph" required>
+    <br>
+    <label class='subfield'>potential of Hydrogen:-min:3 & max:9   </label>
+    
+<br>
+    <br>
+    <br>
+<label for="rain" class='label'><b>Rainfall</b></label>
+<br>
+<input type="text" class="field" name="rain" id="Rainf" required>
+<br>
+<label class='subfield'>rainfall:-min:20 & max:298   </label>
+    <br>
+    <br>
+    <button type="submit" id="button">Submit</button> 
+</div>  
+</form>
+
+    </body>
+</html>
